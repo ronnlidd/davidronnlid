@@ -1,21 +1,37 @@
-import React from "react"
-// import { Link } from "gatsby"
+import React, { Component } from "react"
+import Helmet from "react-helmet"
 
-import Layout from "../components/layout"
-// import Image from "../components/image"
+import "../styles/indexPage.css"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to the new David Rönnlid site.</p>
-    <p>It is currently undergoing development.</p>
-    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div> */}
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
-  </Layout>
-)
+import { ContactMediums } from "../components/contactMediums"
+import { WhatIDo } from "../components/whatIDo"
+// import ThirdPage from "../components/thirdPage"
+
+import DavidTalking from "../components/davidImgLoadedTwo"
+import DavidSmile from "../components/davidImgLoaded"
+
+export class IndexPage extends Component {
+  render() {
+    return (
+      <>
+        <Helmet>
+          <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+          />
+        </Helmet>
+        <SEO />
+        <DavidSmile />
+        <ContactMediums />
+        <WhatIDo />
+        <DavidTalking />
+        {/* <ThirdPage /> */}
+      </>
+    )
+  }
+}
 
 export default IndexPage
