@@ -4,14 +4,15 @@ import styled from "styled-components"
 const TextTransition = styled.span`
   font-style: italic;
 
-  animation: pulsate 1s ease-out;
+  animation: pulsate 1200ms ease-out;
   animation-iteration-count: infinite;
   opacity: 0.7;
   color: white;
-  padding: 1.5rem 2.5rem 1.5rem 1.5rem;
+  padding: 1rem 2.5rem 1rem 1.5rem;
   background: black;
   border: 4px solid black;
   border-radius: 6rem 2rem 10rem 6rem;
+  box-shadow: -1px 1px 0 black;
 
   @keyframes pulsate {
     0% {
@@ -36,7 +37,7 @@ const TextTransition = styled.span`
 `
 
 const textArray = ["solve problems", "develop websites", "write", "biohack"]
-const vari = 1000
+const vari = 1200
 
 export class WhoAmI extends Component {
   constructor() {

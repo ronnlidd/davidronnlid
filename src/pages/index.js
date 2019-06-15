@@ -1,20 +1,26 @@
 import React, { Component } from "react"
 import Helmet from "react-helmet"
 
-import "../styles/indexPage.css"
+import "../styles/indexPage/allScreenSizesIndexPage.css"
+import "../styles/indexPage/forPhoneIndexPage.css"
+import "../styles/indexPage/forTabletPortraitUpIndexPage.css"
+import "../styles/indexPage/forTabletLandscapeUpIndexPage.css"
+import "../styles/indexPage/forDesktopUpIndexPage.css"
+
 import SEO from "../components/seo"
 
 import { ContactMediums } from "../components/contactMediums"
 import { WhatIDo } from "../components/whatIDo"
 // import ThirdPage from "../components/thirdPage"
 
-import DavidTalking from "../components/davidImgLoadedTwo"
-import DavidSmile from "../components/davidImgLoaded"
+import DavidTalking from "../components/loadedImages/davidImgLoadedTwo"
+import DavidSmile from "../components/loadedImages/davidImgLoaded"
+import WhoIAmComponent from "../components/whoIam/whoIAmComponent"
 
 export class IndexPage extends Component {
   render() {
     return (
-      <>
+      <div>
         <Helmet>
           <link
             rel="stylesheet"
@@ -24,12 +30,15 @@ export class IndexPage extends Component {
           />
         </Helmet>
         <SEO />
-        <DavidSmile />
+        <WhoIAmComponent />
+
         <ContactMediums />
+
+        <DavidSmile />
         <WhatIDo />
         <DavidTalking />
         {/* <ThirdPage /> */}
-      </>
+      </div>
     )
   }
 }
