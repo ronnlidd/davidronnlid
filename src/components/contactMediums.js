@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import RwLogoLoaded from "./loadedImages/rwLogoLoaded"
+import RwLogoLoaded from "./rwLogoLoaded"
 import Tooltip from "react-tooltip-lite"
 import SocialMedia from "./socialMedia"
 
@@ -35,7 +35,7 @@ export class ContactMediums extends Component {
             content="I will build a website for you or your business!"
             useDefaultStyles={true}
           >
-            <RwLogoLoaded />
+            <RwLogoLoaded styled={false} />
           </Tooltip>
         </a>
       </div>

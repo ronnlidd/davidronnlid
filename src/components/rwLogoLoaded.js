@@ -17,10 +17,17 @@ export default props => (
     `}
     render={data => (
       <>
-        <Img
-          fluid={data.file.childImageSharp.fluid}
-          style={{ width: "4rem", margin: "-.1rem 0 -0 -.5rem" }}
-        />
+        {props.styled ? (
+          <Img
+            fluid={data.file.childImageSharp.fluid}
+            style={{ width: "15vw", margin: "1rem auto" }}
+          />
+        ) : (
+          <Img
+            fluid={data.file.childImageSharp.fluid}
+            style={{ width: "30vw" }}
+          />
+        )}
       </>
     )}
   />
