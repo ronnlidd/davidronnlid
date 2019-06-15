@@ -1,0 +1,82 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+h1,
+p {
+  font-family: "abel, sans-serif";
+}
+.arrow--font-size {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  z-index: 40;
+  color: black;
+  font-size: 4rem;
+}
+
+/*
+
+    @include for-phone-only {    
+     
+    }
+
+     @include for-tablet-portrait-up {    
+     
+    }
+
+     @include for-tablet-landscape-up {    
+     
+    } 
+
+     @include for-desktop-up {    
+     
+    }
+
+*/
+
+.contact--wrapper {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  & a {
+    // align-items: center;
+    // justify-content: center;
+    margin: 0 4rem;
+  }
+
+  @include for-phone-only {
+  }
+
+  @include for-tablet-portrait-up {
+  }
+
+  @include for-tablet-landscape-up {
+  }
+
+  @include for-desktop-up {
+  }
+}

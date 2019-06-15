@@ -6,11 +6,11 @@ export default class SocialMedia extends Component {
       <a href={this.props.link} rel="noopener noreferrer" target="_blank">
         <i
           style={{
-            fontSize: "3rem",
+            fontSize: "20vw",
             margin: "0 auto",
             color: `${this.props.color}`,
           }}
-          className={`fab fa-${this.props.where.toLowerCase()} fa-1x`}
+          className={`fab fa-${this.props.where.toLowerCase()}`}
         />
       </a>
     )
