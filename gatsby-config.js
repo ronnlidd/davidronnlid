@@ -15,20 +15,5 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `David Rönnlid personal website`,
-        short_name: `David Rönnlid`,
-        start_url: `/`,
-        background_color: `#49494b`,
-        theme_color: `#bd8c7d`,
-        display: `minimal-ui`,
-        icon: `./public/icons/ConfidentSmile.png`, // This path is relative to the root of the site.
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
