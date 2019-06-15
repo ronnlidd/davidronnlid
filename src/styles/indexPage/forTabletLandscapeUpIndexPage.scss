@@ -1,0 +1,83 @@
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@include for-tablet-landscape-up {
+  .whatIDo {
+    width: 42vw;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 0;
+
+    & .margin--zero {
+      margin-bottom: 0;
+    }
+  }
+
+  .contact--wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    position: fixed;
+    justify-content: space-around;
+    background: #49494b;
+    width: 5rem;
+    box-shadow: 0 1px 0 black;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    border-bottom-right-radius: 3rem;
+    margin-top: 0rem;
+
+    & a {
+      margin: 0.75rem 0 0 1rem;
+    }
+  }
+
+  .closeWhoIam {
+    color: white;
+    z-index: 999;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+  }
+
+  .who--I-am {
+    font-size: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    text-align: center;
+    font-family: abel, sans-serif;
+    position: fixed;
+    z-index: 8;
+    padding: 1rem;
+    background: #49494b;
+    padding-bottom: 4rem;
+    width: 100vw;
+    bottom: -1.55rem;
+    color: white;
+    box-shadow: 0 -1px 0 black;
+  }
+
+  .whoIam {
+    position: relative;
+    top: 2rem;
+    z-index: 5;
+  }
+
+  .david--smile {
+    width: 57vw;
+    margin-right: 1vw;
+  }
+
+  .david--calling {
+    width: 57vw;
+    margin-bottom: -0.1rem;
+  }
+}

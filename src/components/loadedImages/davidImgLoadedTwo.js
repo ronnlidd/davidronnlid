@@ -15,6 +15,10 @@ export default props => (
         }
       }
     `}
-    render={data => <Img fluid={data.file.childImageSharp.fluid} />}
+    render={data => (
+      <div className="david--calling">
+        <Img fluid={data.file.childImageSharp.fluid} />
+      </div>
+    )}
   />
 )
